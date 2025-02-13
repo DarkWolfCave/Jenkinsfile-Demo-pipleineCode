@@ -14,7 +14,7 @@ stage('Build Code')
         git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
         sh 'mvn package'
         script{
-          timeout(time: 10,unit: 'MINIUTES'){
+          timeout(time: 10,unit: 'MINUTES'){
           input(id: 'DeplpoyCode',message: 'Continue Deploy stage',ok: 'Deploy')
        }
     }

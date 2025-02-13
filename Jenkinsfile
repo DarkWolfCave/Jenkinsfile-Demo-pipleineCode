@@ -6,7 +6,7 @@ tools{
   maven 'mymaven'
 }
 
-paramters{
+parameters{
       
        choice(name: "ENV",choices: ["","Dev","QA"])
 
